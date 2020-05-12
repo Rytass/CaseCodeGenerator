@@ -1,0 +1,16 @@
+{
+  "database": {
+    "rules": "database.rules.json"
+  },
+  "functions": {
+    "predeploy": [
+      "npm --prefix \"$RESOURCE_DIR\" run lint"
+    ]
+  },
+  "emulators": {
+    "functions": {
+      "host": "localhost",
+      "port": "9123"
+    }
+  }
+}
